@@ -1,0 +1,18 @@
+[
+  {
+    "contradiction_id": "CONTRAD-FDP-PARTICIPANTS",
+    "topic": "Faculty Development Participation Count in 2024-25",
+    "source_a_id": "DOC-ACCR-003",
+    "source_a_title": "Faculty Development Report 2024-25",
+    "source_a_claim": "The institution conducted 18 faculty development programs during 2024-25, with 126 faculty participation records.",
+    "source_a_page": 6,
+    "source_a_status": "active",
+    "source_b_id": "DOC-ACCR-004",
+    "source_b_title": "Draft Annual Institutional Report 2024-25 (Internal Working Draft)",
+    "source_b_claim": "Preliminary training attendance recorded 118 faculty participants across initial FDP cohorts prior to mid-term consolidation.",
+    "source_b_page": 2,
+    "source_b_status": "superseded",
+    "conflict_analysis": "Source DOC-ACCR-004 is an internal working draft created in February 2025 before final Q4 training reconciliation. Source DOC-ACCR-003 is the official audited report approved in May 2025 documenting the full 126 participants.",
+    "confidence_impact": -0.05
+  }
+]

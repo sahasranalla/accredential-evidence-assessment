@@ -1,0 +1,72 @@
+[
+  {
+    "gap_id": "GAP-001",
+    "criterion": "Criterion 6",
+    "subcriterion": "6.3 Faculty Empowerment",
+    "topic": "Faculty participation in international training programs during 2025-26",
+    "current_evidence_count": 0,
+    "suggested_documents": [
+      "Faculty International Training Register 2025-26",
+      "International Travel Grant Sanction Orders",
+      "Foreign University Collaboration Certificates",
+      "IQAC Activity Report 2025-26"
+    ],
+    "priority": "HIGH",
+    "reason": "The repository currently has training data for 2022-23, 2023-24, and 2024-25, but no records of international training programs for 2025-26."
+  },
+  {
+    "gap_id": "GAP-002",
+    "criterion": "Criterion 5",
+    "subcriterion": "5.4 Alumni Engagement",
+    "topic": "Alumni endowment fund for robotics and autonomous vehicles laboratory",
+    "current_evidence_count": 0,
+    "suggested_documents": [
+      "Alumni Endowment Deed & Agreement",
+      "Dedicated Bank Statements of Alumni Trust",
+      "Laboratory Equipment Invoices funded by Alumni"
+    ],
+    "priority": "MEDIUM",
+    "reason": "General alumni scholarships exist, but dedicated endowment records for specialized robotics lab funding are not documented."
+  },
+  {
+    "gap_id": "GAP-003",
+    "criterion": "Criterion 7",
+    "subcriterion": "7.1 Environmental Responsibility",
+    "topic": "Third-party comprehensive energy audit certification for 2025-26",
+    "current_evidence_count": 0,
+    "suggested_documents": [
+      "BEE Certified Energy Auditor Official Report 2025-26",
+      "Electrical Safety and Carbon Offset Certificate"
+    ],
+    "priority": "HIGH",
+    "reason": "Internal solar power reports exist for 2024-25, but an external third-party energy audit for 2025-26 has not been submitted."
+  },
+  {
+    "gap_id": "GAP-004",
+    "criterion": "Criterion 3",
+    "subcriterion": "3.1 Resource Mobilization for Research",
+    "topic": "Industry-sponsored research grants exceeding 1 Crore for green hydrogen technology",
+    "current_evidence_count": 0,
+    "suggested_documents": [
+      "Sponsored Research Grant Agreement",
+      "Sanction Letter from Industry Partner",
+      "Fund Utilization Certificate"
+    ],
+    "priority": "MEDIUM",
+    "reason": "The institution has government grants and consulting, but large-scale industry-funded green hydrogen research is unverified."
+  },
+  {
+    "gap_id": "GAP-005",
+    "criterion": "Criterion 3",
+    "subcriterion": "3.2 Innovation Ecosystem",
+    "topic": "Patent licensing revenue distribution for commercialized biotech products",
+    "current_evidence_count": 0,
+    "suggested_documents": [
+      "Technology Transfer Licensing Agreement",
+      "Royalty Distribution Ledgers",
+      "Commercialization Statements"
+    ],
+    "priority": "LOW",
+    "reason": "Agricultural and drone patents were licensed, but no records exist for commercialized biotech products."
+  }
+]

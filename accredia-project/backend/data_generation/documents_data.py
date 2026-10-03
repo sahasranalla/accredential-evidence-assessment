@@ -1,0 +1,1444 @@
+import json
+
+DOCUMENTS = [
+    {
+        "document_id": "DOC-ACCR-001",
+        "filename": "annual_institutional_report_2024_25.pdf",
+        "title": "Annual Institutional Quality Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.5 Internal Quality Assurance System",
+        "document_type": "Annual Report",
+        "author": "Dr. Rameshwar Rao, Director IQAC",
+        "effective_date": "2025-05-18",
+        "status": "active",
+        "summary": "Comprehensive institutional progress report covering governance, admissions, pedagogical quality, faculty empowerment, research output, and infrastructural expansion at Vidyapath Institute of Technology for academic year 2024-25.",
+        "keywords": ["governance", "faculty development", "research grants", "placements", "infrastructure", "iqac", "quality benchmarks"],
+        "sections": [
+            {
+                "section_title": "Executive Governance and Quality Benchmarks",
+                "page_number": 1,
+                "paragraphs": [
+                    "Vidyapath Institute of Technology (VITEC) consolidated its position as a leading engineering institution in Telangana during the 2024-25 academic year. Under the strategic direction of the Governing Body and Academic Council, the institution maintained strict adherence to outcome-based education benchmarks.",
+                    "The Internal Quality Assurance Cell (IQAC) monitored continuous quality improvement across all seven criteria, conducting quarterly internal reviews and bi-annual academic audits across undergraduate and postgraduate departments."
+                ]
+            },
+            {
+                "section_title": "Academic Programs and Enrollment Profile",
+                "page_number": 2,
+                "paragraphs": [
+                    "During 2024-25, total approved student intake stood at 1,080 seats across six engineering disciplines. Actual enrollment reached 1,028 students, reflecting an overall intake utilization of 95.2%. Student diversity indicators showed enrollment of students from 18 Indian states and Union Territories.",
+                    "Gender diversity reached 38.6% female student representation in undergraduate engineering programs, supported by institutional scholarships and dedicated mentorship cells."
+                ]
+            },
+            {
+                "section_title": "Faculty Development and Empowerment",
+                "page_number": 3,
+                "paragraphs": [
+                    "The institution conducted 18 faculty development programs during 2024-25, with 126 faculty participation records documented in the institutional registry. Faculty members completed advanced training in modern AI applications, outcome-based curriculum mapping, and flipped-classroom pedagogies.",
+                    "Financial support amounting to Rs. 14.8 Lakhs was disbursed to 64 faculty members for attending national and international conferences, publishing in high-impact journals, and acquiring professional certifications."
+                ],
+                "table": {
+                    "headers": ["Quarter", "Programs Held", "Faculty Participated", "Grants Disbursed"],
+                    "rows": [
+                        ["Q1 (Jun-Aug 2024)", "4 Programs", "28 Faculty", "Rs. 3.2 Lakhs"],
+                        ["Q2 (Sep-Nov 2024)", "5 Programs", "36 Faculty", "Rs. 4.1 Lakhs"],
+                        ["Q3 (Dec-Feb 2025)", "5 Programs", "34 Faculty", "Rs. 4.3 Lakhs"],
+                        ["Q4 (Mar-May 2025)", "4 Programs", "28 Faculty", "Rs. 3.2 Lakhs"]
+                    ]
+                }
+            },
+            {
+                "section_title": "Research Publications and Sponsored Projects",
+                "page_number": 4,
+                "paragraphs": [
+                    "Faculty researchers authored 142 research papers in Scopus and Web of Science indexed journals during the reporting cycle. Sponsored research grants totaled Rs. 1.28 Crores received from government agencies including DST, SERB, and AICTE.",
+                    "The institutional seed money grant scheme supported 14 early-career faculty investigators with an aggregate funding allocation of Rs. 42.5 Lakhs."
+                ]
+            },
+            {
+                "section_title": "Campus Infrastructure and Student Progression",
+                "page_number": 5,
+                "paragraphs": [
+                    "Campus physical infrastructure was augmented with 12 new smart interactive classrooms, a high-performance GPU computing cluster for the AI lab, and a 250 kW rooftop solar photovoltaic installation generating 36.2% of annual campus energy.",
+                    "The Training and Placement Cell achieved 88.4% confirmed placements for eligible graduates, with the highest domestic package reaching 44.5 LPA."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-002",
+        "filename": "iqac_annual_report_2024_25.pdf",
+        "title": "IQAC Annual Quality Assurance Report (AQAR) 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.5 Internal Quality Assurance System",
+        "document_type": "IQAC Report",
+        "author": "Dr. Rameshwar Rao, Coordinator IQAC",
+        "effective_date": "2025-05-20",
+        "status": "active",
+        "summary": "Internal Quality Assurance Cell annual review documenting institutional benchmarks, academic and administrative audits, feedback action plans, and faculty capacity building metrics.",
+        "keywords": ["IQAC", "AQAR", "academic audit", "quality assurance", "faculty empowerment", "stakeholder feedback"],
+        "sections": [
+            {
+                "section_title": "IQAC Mandate and Strategic Initiatives",
+                "page_number": 1,
+                "paragraphs": [
+                    "The IQAC of Vidyapath Institute of Technology functioned actively throughout 2024-25 to establish quality operational guidelines across curricular, co-curricular, and administrative functions.",
+                    "The cell convened four statutory quarterly meetings on July 14, 2024, October 19, 2024, January 21, 2025, and April 28, 2025, with active participation from academic experts, industry representatives, and student council nominees."
+                ]
+            },
+            {
+                "section_title": "Academic and Administrative Audits (AAA)",
+                "page_number": 2,
+                "paragraphs": [
+                    "External academic peer reviews were organized on May 12-14, 2025, featuring distinguished evaluators from Osmania University and JNTU Hyderabad. The committee evaluated course files, laboratory records, attainment matrices, and research outputs.",
+                    "Out of 120 course files audited across six departments, 114 satisfied all IQAC rigorous compliance benchmarks without requiring remediation."
+                ]
+            },
+            {
+                "section_title": "Faculty Capacity Building",
+                "page_number": 12,
+                "paragraphs": [
+                    "Faculty empowerment initiatives achieved 126 faculty participation instances across 18 approved FDPs coordinated with IIT Hyderabad and IEEE. Every academic department fulfilled the mandatory mandate of organizing at least two national-level specialized workshops.",
+                    "Specialized pedagogy tracks included Problem-Based Learning (PBL) in engineering, automated code grading mechanisms, and ethical AI classroom tools."
+                ],
+                "table": {
+                    "headers": ["Department", "FDPs Conducted", "Faculty Attendees", "Compliance Status"],
+                    "rows": [
+                        ["CSE & IT", "6 Programs", "44 Faculty", "100% Target Met"],
+                        ["ECE & EEE", "5 Programs", "38 Faculty", "100% Target Met"],
+                        ["Mechanical & Civil", "4 Programs", "28 Faculty", "100% Target Met"],
+                        ["Basic Sciences & H&S", "3 Programs", "16 Faculty", "100% Target Met"]
+                    ]
+                }
+            },
+            {
+                "section_title": "Collaborative Quality Initiatives with Industry",
+                "page_number": 13,
+                "paragraphs": [
+                    "IQAC facilitated the signing of four new institutional industry MoUs during 2024-25, expanding industry-supported elective courses and experiential laboratory infrastructure.",
+                    "Comprehensive stakeholder feedback was collected from 2,840 students, 186 teachers, 72 employers, and 450 alumni, resulting in targeted curriculum enrichment."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-003",
+        "filename": "faculty_development_report_2024_25.pdf",
+        "title": "Faculty Development & Pedagogical Empowerment Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.3 Faculty Empowerment Strategies",
+        "document_type": "Faculty Development Report",
+        "author": "Dr. Rameshwar Rao & Faculty Welfare Committee",
+        "effective_date": "2025-05-12",
+        "status": "active",
+        "summary": "Comprehensive register and impact assessment of faculty development programs, pedagogical workshops, industry internships, and professional development support in 2024-25.",
+        "keywords": ["faculty development", "FDP", "pedagogy", "training", "faculty empowerment", "capacity building"],
+        "sections": [
+            {
+                "section_title": "Institutional Faculty Development Framework",
+                "page_number": 1,
+                "paragraphs": [
+                    "Vidyapath Institute of Technology recognizes that faculty excellence directly drives student academic attainment. The Faculty Welfare and Empowerment Policy mandates regular participation in national and international training programs.",
+                    "The institution provides full financial sponsorship covering registration fees, travel grants, and paid duty leave for approved faculty empowerment activities."
+                ]
+            },
+            {
+                "section_title": "Advanced Pedagogical Enhancement Workshops",
+                "page_number": 3,
+                "paragraphs": [
+                    "A 5-day residential workshop on 'Active Learning Strategies and Outcome-Based Curriculum Delivery' was conducted in collaboration with National Institute of Technical Teachers Training and Research (NITTTR), Chennai.",
+                    "Thirty-two senior and junior faculty members completed hands-on capstone modules on rubric formulation and bloom taxonomy question mapping."
+                ]
+            },
+            {
+                "section_title": "Faculty Development Activities",
+                "page_number": 6,
+                "paragraphs": [
+                    "The institution conducted 18 faculty development programs during 2024-25, with 126 faculty participation records. These programs covered advanced pedagogy, outcome-based education, artificial intelligence applications, and high-impact research methodologies.",
+                    "Detailed department breakdown confirms: 6 programs conducted by Computer Science and Engineering, 5 programs by Electronics and Communication, 4 programs by Mechanical and Civil Engineering, and 3 interdisciplinary programs by IQAC."
+                ],
+                "table": {
+                    "headers": ["Sl No", "Program Title", "Dates", "Participants", "Sponsoring Agency"],
+                    "rows": [
+                        ["FDP-01", "Generative AI in Modern Engineering Pedagogy", "July 8-13, 2024", "24 Faculty", "AICTE ATAL / VITEC"],
+                        ["FDP-02", "Outcome-Based Assessment Rubric Design", "August 19-23, 2024", "22 Faculty", "IQAC VITEC"],
+                        ["FDP-03", "VLSI System Design using Cadence Tools", "September 16-20, 2024", "18 Faculty", "IEEE CASS / VITEC"],
+                        ["FDP-04", "Electric Vehicle Powertrain Engineering", "November 11-15, 2024", "16 Faculty", "DST-SERB / VITEC"],
+                        ["FDP-05", "Advanced Research Writing & Scopus Indexing", "December 16-20, 2024", "26 Faculty", "Research Cell"],
+                        ["FDP-06", "Smart Manufacturing and Industry 4.0", "February 17-21, 2025", "20 Faculty", "CII Telangana / VITEC"]
+                    ]
+                }
+            },
+            {
+                "section_title": "Outcome Assessment and Teacher Impact Feedback",
+                "page_number": 7,
+                "paragraphs": [
+                    "Post-training feedback surveys administered across all 18 FDPs indicated a 94.6% satisfaction rating regarding instructor domain expertise, practical relevance, and classroom applicability.",
+                    "Participant action research plans were submitted to IQAC, demonstrating direct implementation of active learning techniques in semester courses."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-004",
+        "filename": "draft_annual_report_2024_25.pdf",
+        "title": "Draft Annual Institutional Report 2024-25 (Internal Working Draft)",
+        "academic_year": "2024-25",
+        "department": "Administration",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.5 Internal Quality Assurance System",
+        "document_type": "Draft Report",
+        "author": "Academic Review Taskforce",
+        "effective_date": "2025-02-15",
+        "status": "superseded",
+        "supersedes": None,
+        "summary": "Early preliminary working draft of institutional annual report compiled prior to final Q4 data reconciliation and IQAC audit closure.",
+        "keywords": ["draft", "preliminary", "faculty participation", "annual report", "superseded"],
+        "sections": [
+            {
+                "section_title": "Preliminary Overview of Academic Operations",
+                "page_number": 1,
+                "paragraphs": [
+                    "This draft compiles preliminary departmental inputs gathered prior to the close of financial year 2024-25. Data points herein are provisional and subject to formal IQAC verification.",
+                    "All numbers reflect unaudited status as of mid-February 2025."
+                ]
+            },
+            {
+                "section_title": "Preliminary Training Attendance Register",
+                "page_number": 2,
+                "paragraphs": [
+                    "Preliminary training attendance recorded 118 faculty participants across initial FDP cohorts prior to mid-term consolidation. Final registers from the Department of Basic Sciences and Humanities are pending reconciliation.",
+                    "Note: This preliminary tally excludes 8 faculty members who completed external virtual training modules awaiting attendance certificates."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-005",
+        "filename": "research_and_innovation_report_2024_25.pdf",
+        "title": "Research, Innovation & Incubation Annual Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Research Cell",
+        "criterion": "Criterion 3",
+        "subcriterion": "3.3 Research Publications and Awards",
+        "document_type": "Research Report",
+        "author": "Dr. Meenakshi Sundaram, Dean R&D",
+        "effective_date": "2025-05-15",
+        "status": "active",
+        "summary": "Detailed report on institutional research grants, faculty seed funding, Scopus publications, IPR filings, and startup incubation at VITEC Innovation Hub.",
+        "keywords": ["research", "publications", "scopus", "patents", "incubation", "seed money", "grants"],
+        "sections": [
+            {
+                "section_title": "Research Policy, Seed Money & Grants",
+                "page_number": 1,
+                "paragraphs": [
+                    "The Research Cell at VITEC operates under a competitive research incentive policy encouraging interdisciplinary discovery. During 2024-25, Rs. 42.5 Lakhs in institutional seed money was disbursed to 14 young faculty investigators.",
+                    "Sponsored research funding from external government bodies reached Rs. 1.28 Crores, with active grants sanctioned by DST, AICTE, and the Ministry of Electronics and Information Technology (MeitY)."
+                ]
+            },
+            {
+                "section_title": "Research Publications & Scopus Citations",
+                "page_number": 8,
+                "paragraphs": [
+                    "VITEC faculty members authored 142 research papers in Scopus and Web of Science indexed journals during 2024-25. Total citation index reached 840 citations with an average impact factor of 2.84.",
+                    "Additionally, faculty members published 24 book chapters and 3 authored monographs with reputed publishers including Springer, IEEE Press, and CRC Press."
+                ],
+                "table": {
+                    "headers": ["Department", "Scopus Papers", "Web of Science", "Total Citations", "Avg Impact Factor"],
+                    "rows": [
+                        ["Computer Science & Engg", "58 Papers", "42 Papers", "380 Citations", "3.24"],
+                        ["Electronics & Communication", "44 Papers", "31 Papers", "265 Citations", "2.95"],
+                        ["Mechanical Engineering", "24 Papers", "18 Papers", "125 Citations", "2.40"],
+                        ["Civil & Electrical Engg", "16 Papers", "12 Papers", "70 Citations", "2.10"]
+                    ]
+                }
+            },
+            {
+                "section_title": "Innovation Ecosystem & Startup Incubation",
+                "page_number": 14,
+                "paragraphs": [
+                    "The VITEC Innovation Hub (VIH) incubated 8 new student-led technology startups in 2024-25, providing prototyping labs, mentorship, and seed support. Three startups secured external angel funding totaling Rs. 45 Lakhs.",
+                    "The annual institutional hackathon 'InnovateX 2024' witnessed participation from 140 teams representing 22 technical colleges across southern India."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-006",
+        "filename": "placement_report_2024_25.pdf",
+        "title": "Campus Placement and Career Progression Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Training & Placement Cell",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.2 Student Progression",
+        "document_type": "Placement Report",
+        "author": "Prof. S. R. V. Prasad, Head T&P",
+        "effective_date": "2025-05-25",
+        "status": "active",
+        "summary": "Campus placement performance report documenting recruiting corporate organizations, placement percentages, highest and median salary packages, and branch statistics.",
+        "keywords": ["placement", "recruitment", "salary packages", "career progression", "corporate recruiters"],
+        "sections": [
+            {
+                "section_title": "Placement Statistics and Corporate Engagement",
+                "page_number": 2,
+                "paragraphs": [
+                    "During the 2024-25 campus placement season, 88.4% of eligible students secured confirmed job offers across 74 visiting corporate organizations. The highest domestic salary package stood at 44.5 LPA offered by Microsoft Corporation.",
+                    "Average CTC across all placed students reached 8.6 LPA, reflecting a 12.4% year-over-year increment over the previous academic cycle."
+                ],
+                "table": {
+                    "headers": ["Metric", "2022-23", "2023-24", "2024-25"],
+                    "rows": [
+                        ["Total Eligible Students", "680", "720", "760"],
+                        ["Students Placed", "578", "626", "672"],
+                        ["Placement Percentage", "85.0%", "86.9%", "88.4%"],
+                        ["Highest CTC (LPA)", "32.0 LPA", "38.0 LPA", "44.5 LPA"],
+                        ["Average CTC (LPA)", "6.8 LPA", "7.6 LPA", "8.6 LPA"],
+                        ["Visiting Companies", "62", "68", "74"]
+                    ]
+                }
+            },
+            {
+                "section_title": "Branch-wise Placement Breakdown",
+                "page_number": 5,
+                "paragraphs": [
+                    "Discipline-wise analysis demonstrated robust recruiter interest: CSE recorded 94.2% placements, ECE achieved 89.1%, Mechanical Engineering registered 81.4%, Civil Engineering reached 76.8%, and EEE completed 83.2% placements.",
+                    "Prominent recruiting partners included Microsoft, Amazon, Infosys, Tata Consultancy Services, Cognizant, L&T Technology Services, and Schneider Electric."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-007",
+        "filename": "internship_report_2024_25.pdf",
+        "title": "Mandatory Student Industry Internship Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Training & Placement Cell",
+        "criterion": "Criterion 1",
+        "subcriterion": "1.3 Curriculum Enrichment & Value-Added Courses",
+        "document_type": "Internship Report",
+        "author": "Prof. S. R. V. Prasad, TPC",
+        "effective_date": "2025-05-10",
+        "status": "active",
+        "summary": "Review of undergraduate student industrial internship completion, credit transfers, stipend data, and institutional corporate linkages.",
+        "keywords": ["internship", "industry credits", "experiential learning", "stipends"],
+        "sections": [
+            {
+                "section_title": "Mandatory Industry Internships and Credits",
+                "page_number": 2,
+                "paragraphs": [
+                    "Under the Autonomous R22 curriculum framework, all undergraduate engineering students are required to undergo a minimum 8-week summer internship or semester-long corporate attachment.",
+                    "During 2024-25, 612 undergraduate students completed credited internships across 118 recognized industrial enterprises, research laboratories (DRDO, NRSC, IICT), and software firms."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-008",
+        "filename": "student_feedback_analysis_2024_25.pdf",
+        "title": "Comprehensive Stakeholder Curriculum Feedback Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 1",
+        "subcriterion": "1.4 Feedback System on Institutional Curriculum",
+        "document_type": "Feedback Report",
+        "author": "Dr. Rameshwar Rao, IQAC",
+        "effective_date": "2025-04-30",
+        "status": "active",
+        "summary": "Systematic collection, quantitative analysis, and Action Taken Report (ATR) regarding curricular design and faculty evaluation from students, teachers, employers, and alumni.",
+        "keywords": ["student feedback", "curriculum review", "stakeholder feedback", "ATR", "satisfaction"],
+        "sections": [
+            {
+                "section_title": "Curriculum and Faculty Evaluation Analysis",
+                "page_number": 3,
+                "paragraphs": [
+                    "Structured online feedback collected from 2,840 students across all undergraduate branches yielded an overall positive rating of 91.2% for curricular delivery, laboratory experiments, and instructional clarity.",
+                    "Key positive feedback focused on the introduction of hands-on Python and cloud computing laboratory modules in the second-year core engineering curriculum."
+                ],
+                "table": {
+                    "headers": ["Stakeholder Category", "Responses Collected", "Overall Satisfaction Rating", "Key Recommendations"],
+                    "rows": [
+                        ["Students", "2,840 Responses", "91.2%", "More hands-on AI elective projects"],
+                        ["Teachers", "186 Responses", "93.4%", "Enhanced seed grants for patenting"],
+                        ["Employers", "72 Responses", "89.6%", "Stronger soft skills and agile practices"],
+                        ["Alumni", "450 Responses", "92.1%", "Early industry capstone integration"]
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-009",
+        "filename": "student_satisfaction_survey_2024_25.pdf",
+        "title": "Student Satisfaction Survey (SSS) Institutional Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 2",
+        "subcriterion": "2.7 Student Satisfaction Survey",
+        "document_type": "Survey Report",
+        "author": "Dr. Rameshwar Rao, IQAC",
+        "effective_date": "2025-05-02",
+        "status": "active",
+        "summary": "Institutional report on the comprehensive 20-question Student Satisfaction Survey covering teaching methods, mentoring, fairness of evaluation, and campus resources.",
+        "keywords": ["SSS", "student satisfaction", "teaching learning", "mentoring", "survey"],
+        "sections": [
+            {
+                "section_title": "Comprehensive SSS Survey Results",
+                "page_number": 4,
+                "paragraphs": [
+                    "The institutional Student Satisfaction Survey for 2024-25 was administered electronically using authenticated student portals, securing valid responses from 1,480 undergraduate students.",
+                    "The overall institutional satisfaction index stood at 4.38 out of 5.0. Highest scores were recorded in faculty preparation for classes (4.52/5), fairness of internal evaluation (4.45/5), and laboratory safety infrastructure (4.41/5)."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-010",
+        "filename": "alumni_engagement_report_2024_25.pdf",
+        "title": "Alumni Association Engagement & Contribution Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.4 Alumni Engagement",
+        "document_type": "Alumni Report",
+        "author": "Dr. V. Lalitha Devi, Alumni Cell",
+        "effective_date": "2025-05-14",
+        "status": "active",
+        "summary": "Annual report on registered alumni association chapters, mentorship hackathons, guest lectures, student scholarships, and alumni financial contributions.",
+        "keywords": ["alumni", "alumni contribution", "mentorship", "endowment", "chapters"],
+        "sections": [
+            {
+                "section_title": "Alumni Association Activities and Chapter Meets",
+                "page_number": 2,
+                "paragraphs": [
+                    "The VITEC Alumni Association registered under the Societies Registration Act organized 4 regional chapter reunions in Hyderabad, Bengaluru, Pune, and Dallas (USA). Alumni contributed Rs. 24.5 Lakhs towards the Student Innovation Grant.",
+                    "Over 45 distinguished alumni delivered guest lectures, mock interviews, and mentored 12 student final-year capstone design teams during the academic year."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-011",
+        "filename": "extension_activities_report_2024_25.pdf",
+        "title": "Community Extension and Outreach Annual Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 3",
+        "subcriterion": "3.4 Extension Activities",
+        "document_type": "Extension Report",
+        "author": "Dr. V. Lalitha Devi, Student Affairs",
+        "effective_date": "2025-05-08",
+        "status": "active",
+        "summary": "Annual documentation of community service, rural technology transfer, Swachh Bharat campaigns, and health camps organized by student bodies.",
+        "keywords": ["extension", "community outreach", "rural development", "nss", "social responsibility"],
+        "sections": [
+            {
+                "section_title": "Community Outreach and Extension Programs",
+                "page_number": 3,
+                "paragraphs": [
+                    "24 extension and outreach activities were conducted in 5 adopted villages in Rangareddy district, involving 860 student volunteers and 42 faculty coordinators.",
+                    "Initiatives included village water quality testing, basic digital literacy camps for government school students, solar lamp distribution, and women's health awareness workshops."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-012",
+        "filename": "nss_activities_report_2024_25.pdf",
+        "title": "National Service Scheme (NSS) Annual Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 3",
+        "subcriterion": "3.4 Extension Activities",
+        "document_type": "NSS Report",
+        "author": "NSS Programme Officer",
+        "effective_date": "2025-05-04",
+        "status": "active",
+        "summary": "Report of the two approved NSS units at VITEC detailing special 7-day rural camp, mega blood donation camps, and environmental plantation drives.",
+        "keywords": ["NSS", "blood donation", "plantation", "rural camp", "community service"],
+        "sections": [
+            {
+                "section_title": "NSS Special Rural Camp and Health Drives",
+                "page_number": 2,
+                "paragraphs": [
+                    "The two approved units of National Service Scheme (NSS) comprising 200 student volunteers organized a 7-day special camp in Manchal village. The team constructed check dams and desilted community ponds.",
+                    "In collaboration with Red Cross Society Hyderabad, the NSS unit conducted two mega blood donation drives, collecting 340 units of blood from student and faculty donors."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-013",
+        "filename": "infrastructure_development_report_2024_25.pdf",
+        "title": "Campus Physical Infrastructure & Facilities Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Administration",
+        "criterion": "Criterion 4",
+        "subcriterion": "4.1 Physical Facilities",
+        "document_type": "Infrastructure Report",
+        "author": "Sri K. Raghavan, Registrar",
+        "effective_date": "2025-05-18",
+        "status": "active",
+        "summary": "Report on campus buildings, laboratory additions, smart classrooms, auditorium upgrades, and physical asset investments during 2024-25.",
+        "keywords": ["infrastructure", "smart classrooms", "laboratories", "campus facilities", "auditorium"],
+        "sections": [
+            {
+                "section_title": "Campus Physical Facilities Expansion",
+                "page_number": 3,
+                "paragraphs": [
+                    "Vidyapath Institute of Technology expanded its built-up physical instructional space to 42,500 sq. meters across 28.5 acres of green campus. In 2024-25, 12 new smart interactive classrooms equipped with digital podiums were commissioned.",
+                    "Total capital investment in instructional infrastructure reached Rs. 4.85 Crores, including renovation of the 1,200-seat central auditorium and new robotics lab."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-014",
+        "filename": "library_utilization_report_2024_25.pdf",
+        "title": "Central Library Learning Resources & Utilization Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Library",
+        "criterion": "Criterion 4",
+        "subcriterion": "4.2 Library as a Learning Resource",
+        "document_type": "Library Report",
+        "author": "Dr. G. Satyanarayana, Chief Librarian",
+        "effective_date": "2025-05-10",
+        "status": "active",
+        "summary": "Report on central library automation using Koha ILMS, print volume accessions, subscription to e-journals (IEEE, ScienceDirect), and digital footfalls.",
+        "keywords": ["library", "koha", "e-journals", "ieee xplore", "sciencedirect", "learning resources"],
+        "sections": [
+            {
+                "section_title": "Central Library Resources & Digital Automation",
+                "page_number": 3,
+                "paragraphs": [
+                    "The Central Library at VITEC houses 48,200 print volumes, 8,400 reference titles, and subscribes to premier international digital repositories including IEEE Xplore, ScienceDirect, SpringerLink, and DELNET.",
+                    "Automated with open-source Koha Integrated Library Management System (ILMS) with RFID gate access, the library recorded average physical daily footfalls of 1,840 users and 3,200 daily digital e-resource queries."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-015",
+        "filename": "ict_infrastructure_report_2024_25.pdf",
+        "title": "ICT and Campus Network Infrastructure Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Administration",
+        "criterion": "Criterion 4",
+        "subcriterion": "4.3 IT Infrastructure",
+        "document_type": "ICT Report",
+        "author": "Chief Technology Officer",
+        "effective_date": "2025-05-16",
+        "status": "active",
+        "summary": "Comprehensive survey of institutional computing devices, leased line internet bandwidth, campus-wide Wi-Fi mesh, and enterprise resource planning software.",
+        "keywords": ["ICT", "bandwidth", "wi-fi", "computing labs", "erp", "cloud infrastructure"],
+        "sections": [
+            {
+                "section_title": "High-Speed Internet Bandwidth & Wi-Fi Coverage",
+                "page_number": 2,
+                "paragraphs": [
+                    "The campus computing environment features 1,420 high-performance computer terminals connected over a Gigabit fiber-optic backbone. A dedicated 1 Gbps 1:1 leased line from Tata Communications ensures high-speed connectivity.",
+                    "A secure Wi-Fi 6 mesh network covers 100% of academic blocks, central library, student hostels, and innovation centers with 802.1x enterprise authentication."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-016",
+        "filename": "examination_results_analysis_2024_25.pdf",
+        "title": "Annual Examination Results & Graduation Analysis 2024-25",
+        "academic_year": "2024-25",
+        "department": "Examination Cell",
+        "criterion": "Criterion 2",
+        "subcriterion": "2.6 Student Performance and Learning Outcomes",
+        "document_type": "Examination Report",
+        "author": "Prof. B. Prabhakar, Controller of Examinations",
+        "effective_date": "2025-05-22",
+        "status": "active",
+        "summary": "End-semester examination analysis, outgoing batch graduation rates, university gold medals, and automation of the examination division.",
+        "keywords": ["examination", "pass percentage", "graduation rate", "results", "academic performance"],
+        "sections": [
+            {
+                "section_title": "Outgoing Batch Pass Percentage & Merit Lists",
+                "page_number": 3,
+                "paragraphs": [
+                    "The overall pass percentage for the graduating batch of 2024-25 reached 94.6% across all undergraduate engineering branches. First-class with distinction was awarded to 64.2% of eligible graduates.",
+                    "The automated examination evaluation software published end-semester examination results within an average turnaround duration of 14 working days from the last examination date."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-017",
+        "filename": "curriculum_review_report_2023_24.pdf",
+        "title": "Curriculum Review & Board of Studies Proceedings 2023-24",
+        "academic_year": "2023-24",
+        "department": "Academic Office",
+        "criterion": "Criterion 1",
+        "subcriterion": "1.1 Curricular Planning and Implementation",
+        "document_type": "Curriculum Report",
+        "author": "Dr. K. S. Murthy, Dean Academics",
+        "effective_date": "2024-06-10",
+        "status": "active",
+        "summary": "Joint Board of Studies minutes and curriculum revision document detailing adoption of Autonomous R22 regulations and emerging technology courses.",
+        "keywords": ["curriculum review", "board of studies", "academic flexibility", "autonomous r22", "electives"],
+        "sections": [
+            {
+                "section_title": "Board of Studies Meeting & Curriculum Modernization",
+                "page_number": 4,
+                "paragraphs": [
+                    "The Joint Board of Studies meeting approved the revised Autonomous R22 curriculum framework, introducing 18 new emerging technology electives in Generative AI, IoT for Agriculture, and Electric Vehicle Architecture.",
+                    "The academic regulations mandate minimum 20% course credits delivered through experiential laboratories, project-based design challenges, and open-source contributions."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-018",
+        "filename": "course_outcome_assessment_report_2024_25.pdf",
+        "title": "Course Outcome (CO) & Program Outcome (PO) Attainment Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Academic Office",
+        "criterion": "Criterion 2",
+        "subcriterion": "2.6 Student Performance and Learning Outcomes",
+        "document_type": "Assessment Report",
+        "author": "Dr. K. S. Murthy, Dean Academics",
+        "effective_date": "2025-05-24",
+        "status": "active",
+        "summary": "Quantitative CO-PO attainment analysis across all 6 accredited engineering programs following NBA guidelines and direct/indirect assessment tools.",
+        "keywords": ["CO-PO", "outcome attainment", "course outcome", "nba", "assessment rubrics"],
+        "sections": [
+            {
+                "section_title": "CO-PO Attainment Calculation Methodology",
+                "page_number": 3,
+                "paragraphs": [
+                    "Direct assessment of Course Outcomes accounted for 80% weightage based on continuous internal evaluations and end-semester tests, while indirect assessment contributed 20% via course-exit surveys.",
+                    "Across 180 evaluated undergraduate courses in 2024-25, average program outcome attainment achieved 82.4% against the institutional threshold benchmark of 75.0%."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-019",
+        "filename": "academic_audit_report_2024_25.pdf",
+        "title": "Comprehensive Academic & Administrative Audit Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.5 Internal Quality Assurance System",
+        "document_type": "Audit Report",
+        "author": "External Peer Review Panel & IQAC",
+        "effective_date": "2025-05-16",
+        "status": "active",
+        "summary": "External peer audit report evaluating teaching files, laboratory logbooks, research portfolios, examination rubrics, and departmental compliance.",
+        "keywords": ["academic audit", "external peer review", "quality assurance", "recommendations", "iqac"],
+        "sections": [
+            {
+                "section_title": "Internal and External Academic Audit Summary",
+                "page_number": 4,
+                "paragraphs": [
+                    "The annual comprehensive academic audit was conducted by external peer review committee members from Osmania University and JNTU Hyderabad on May 12-14, 2025.",
+                    "The peer review committee noted 94 commendations for strong laboratory modernization and recommended expanding interdisciplinary postgraduate research fellowships."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-020",
+        "filename": "patents_and_innovation_report_2024_25.pdf",
+        "title": "Intellectual Property Rights (IPR) & Patents Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Research Cell",
+        "criterion": "Criterion 3",
+        "subcriterion": "3.2 Innovation Ecosystem",
+        "document_type": "IPR Report",
+        "author": "Dr. Meenakshi Sundaram, Dean R&D",
+        "effective_date": "2025-05-11",
+        "status": "active",
+        "summary": "Annual register of institutional patent filings, published utility patents, trademark registrations, and technology transfer agreements.",
+        "keywords": ["patents", "IPR", "intellectual property", "inventions", "technology transfer"],
+        "sections": [
+            {
+                "section_title": "IPR Filings and Commercialization",
+                "page_number": 3,
+                "paragraphs": [
+                    "During 2024-25, 16 patent applications were filed with the Indian Patent Office, of which 9 patents were published in the official gazette and 2 utility patents were granted.",
+                    "Two granted patents in automated agricultural soil nutrient sensing and drone-assisted inspection were licensed to regional agritech enterprises."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-021",
+        "filename": "mou_and_collaboration_report_2024_25.pdf",
+        "title": "Industry Collaboration & Corporate MoUs Annual Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Training & Placement Cell",
+        "criterion": "Criterion 3",
+        "subcriterion": "3.5 Collaborations, MoUs & Linkages",
+        "document_type": "Collaboration Report",
+        "author": "Industry Interaction Cell",
+        "effective_date": "2025-05-09",
+        "status": "active",
+        "summary": "Catalogue of active Memorandums of Understanding with corporate organizations, industrial visits, guest lectures, and joint skill certification programs.",
+        "keywords": ["MoU", "collaborations", "industry linkages", "corporate partnerships"],
+        "sections": [
+            {
+                "section_title": "Active Memorandums of Understanding",
+                "page_number": 4,
+                "paragraphs": [
+                    "The institution maintained 28 active corporate Memorandums of Understanding (MoUs) in 2024-25, including signed agreements with Microsoft, TCS, Infosys, Tech Mahindra, and Cyient.",
+                    "These MoUs facilitated 14 joint curriculum workshops, 612 student internships, and setup of the Microsoft Azure Cloud Innovation Center on campus."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-022",
+        "filename": "consultancy_activities_report_2024_25.pdf",
+        "title": "Industrial Consultancy & Technical Services Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Research Cell",
+        "criterion": "Criterion 3",
+        "subcriterion": "3.1 Resource Mobilization for Research",
+        "document_type": "Consultancy Report",
+        "author": "Dr. Meenakshi Sundaram, Dean R&D",
+        "effective_date": "2025-05-06",
+        "status": "active",
+        "summary": "Documentation of industrial testing, corporate consultancy projects, technical advisory revenue, and departmental consulting assignments.",
+        "keywords": ["consultancy", "technical services", "testing", "revenue generation", "industry projects"],
+        "sections": [
+            {
+                "section_title": "Industrial Consultancy Projects and Revenue",
+                "page_number": 3,
+                "paragraphs": [
+                    "The institution generated Rs. 38.6 Lakhs through industrial consultancy projects during 2024-25. The Department of Civil Engineering provided structural health auditing for Telangana irrigation projects.",
+                    "The Department of Electrical Engineering conducted third-party harmonic distortion testing for 8 manufacturing units in the Cherlapally industrial zone."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-023",
+        "filename": "student_mentoring_report_2024_25.pdf",
+        "title": "Proctorial Student Mentoring & Counseling Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.1 Student Support & Scholarships",
+        "document_type": "Mentoring Report",
+        "author": "Dr. V. Lalitha Devi, Student Affairs",
+        "effective_date": "2025-05-05",
+        "status": "active",
+        "summary": "Report on the institutional proctorial system, student counseling records, slow learner remediation, and mentor-mentee ratios.",
+        "keywords": ["mentoring", "proctorial system", "student support", "counseling", "slow learners"],
+        "sections": [
+            {
+                "section_title": "Proctorial Mentoring System",
+                "page_number": 2,
+                "paragraphs": [
+                    "The institution maintained an institutional mentor-to-mentee ratio of 1:18 during 2024-25. Mentors conducted bi-weekly counseling sessions documenting academic progress, psychological wellness, and career goals.",
+                    "Remedial coaching classes conducted on Saturdays assisted 142 identified slow learners in clearing prerequisite mathematics and programming subjects."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-024",
+        "filename": "scholarship_and_financial_aid_report_2024_25.pdf",
+        "title": "Scholarship & Student Financial Support Annual Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.1 Student Support & Scholarships",
+        "document_type": "Scholarship Report",
+        "author": "Dr. V. Lalitha Devi, Student Affairs",
+        "effective_date": "2025-05-17",
+        "status": "active",
+        "summary": "Comprehensive register of state welfare scholarships, national merit scholarships, and institutional fee waivers granted to deserving students in 2024-25.",
+        "keywords": ["scholarships", "financial aid", "fee concessions", "merit scholarship", "student welfare"],
+        "sections": [
+            {
+                "section_title": "Institutional and Government Scholarships",
+                "page_number": 4,
+                "paragraphs": [
+                    "A total of 1,120 students benefited from government and institutional scholarships during the academic year 2024-25, representing a cumulative disbursement of Rs. 3.42 Crores.",
+                    "Institutional merit scholarships funded by Vidyapath Educational Trust provided 100% tuition fee waivers to 48 state entrance examination rank holders."
+                ],
+                "table": {
+                    "headers": ["Scholarship Scheme", "Beneficiary Students", "Total Amount Disbursed", "Funding Source"],
+                    "rows": [
+                        ["Telangana e-PASS Post-Matric", "864 Students", "Rs. 2.68 Crores", "State Government"],
+                        ["National Scholarship Portal (NSP)", "112 Students", "Rs. 38.4 Lakhs", "Central Government"],
+                        ["Vidyapath Merit-cum-Means Grant", "96 Students", "Rs. 24.0 Lakhs", "Institutional Trust"],
+                        ["Alumni Scholarship Fund", "48 Students", "Rs. 11.6 Lakhs", "VITEC Alumni Association"]
+                    ]
+                }
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-025",
+        "filename": "green_campus_report_2024_25.pdf",
+        "title": "Clean & Green Campus Environment Audit Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Estate Office",
+        "criterion": "Criterion 7",
+        "subcriterion": "7.1 Institutional Values & Environmental Responsibility",
+        "document_type": "Environmental Report",
+        "author": "Er. D. Madhav Rao, Estate Officer",
+        "effective_date": "2025-05-07",
+        "status": "active",
+        "summary": "Green audit findings, carbon footprint mitigation, botanical inventory, water harvesting pits, and restricted automobile zones on campus.",
+        "keywords": ["green campus", "environment", "plantation", "sustainability", "carbon footprint"],
+        "sections": [
+            {
+                "section_title": "Clean and Green Campus Initiatives",
+                "page_number": 3,
+                "paragraphs": [
+                    "The institutional campus spans 28.5 acres with 45% verified green cover comprising 2,400 geo-tagged trees, drip irrigation, rainwater recharge pits, and zero motorized vehicle zones.",
+                    "The institution maintains 6 rainwater harvesting recharge pits with a cumulative percolation capacity of 450,000 liters per monsoon downpour."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-026",
+        "filename": "energy_conservation_report_2024_25.pdf",
+        "title": "Energy Conservation & Renewable Solar Power Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Estate Office",
+        "criterion": "Criterion 7",
+        "subcriterion": "7.1 Institutional Values & Environmental Responsibility",
+        "document_type": "Energy Report",
+        "author": "Er. D. Madhav Rao, Estate Officer",
+        "effective_date": "2025-05-09",
+        "status": "active",
+        "summary": "Technical report on rooftop solar PV power generation, LED lighting retrofits, sensor-controlled illumination, and energy conservation indices.",
+        "keywords": ["energy conservation", "solar power", "renewable energy", "LED retrofitting", "sustainability"],
+        "sections": [
+            {
+                "section_title": "Solar Energy and Power Management",
+                "page_number": 3,
+                "paragraphs": [
+                    "The institution operates a 250 kW grid-connected rooftop solar photovoltaic power plant commissioned across Blocks A, B, and C, generating 3,42,000 kWh annually and catering to 36.2% of total campus electrical energy demand.",
+                    "100% of campus administrative and instructional corridors are retrofitted with energy-efficient LED luminaires and motion sensors."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-027",
+        "filename": "waste_management_report_2024_25.pdf",
+        "title": "Solid, Liquid & E-Waste Management Audit Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Estate Office",
+        "criterion": "Criterion 7",
+        "subcriterion": "7.1 Institutional Values & Environmental Responsibility",
+        "document_type": "Waste Management Report",
+        "author": "Er. D. Madhav Rao, Estate Officer",
+        "effective_date": "2025-05-08",
+        "status": "active",
+        "summary": "Audit of campus sewage treatment plant (STP), organic composting, hazardous waste disposal, and certified e-waste recycling MOUs.",
+        "keywords": ["waste management", "STP", "liquid waste", "e-waste recycling", "solid waste"],
+        "sections": [
+            {
+                "section_title": "Waste Processing and Water Recycling Systems",
+                "page_number": 3,
+                "paragraphs": [
+                    "The on-campus Sewage Treatment Plant (STP) with 100 KLD capacity operates continuously, recycling 85 KLD of treated grey water for campus landscaping and toilet flushing.",
+                    "Electronic waste is systematically segregated and handed over bi-annually to authorized recyclers under an institutional disposal agreement with Earth-Sense Recycle Ltd."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-028",
+        "filename": "institutional_best_practices_report_2024_25.pdf",
+        "title": "Institutional Best Practices Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 7",
+        "subcriterion": "7.2 Best Practices in Institutional Excellence",
+        "document_type": "Best Practices Report",
+        "author": "Dr. Rameshwar Rao, IQAC",
+        "effective_date": "2025-05-19",
+        "status": "active",
+        "summary": "Documentation of two flagship institutional best practices in NAAC format: Community Project Engineering Sprint and Industry Mentored Capstone Tracks.",
+        "keywords": ["best practices", "community innovation", "industry capstone", "institutional excellence"],
+        "sections": [
+            {
+                "section_title": "Best Practice 1: Project-Based Community Innovation",
+                "page_number": 2,
+                "paragraphs": [
+                    "Best Practice I: 'Project-Based Community Innovation' mandates that every pre-final year engineering student team develop an engineering solution addressing a real rural or semi-urban problem.",
+                    "In 2024-25, 48 community projects were completed, including solar water purification kits and low-cost automated paddy grain driers."
+                ]
+            },
+            {
+                "section_title": "Best Practice 2: Comprehensive Industry Capstone Mentorship",
+                "page_number": 4,
+                "paragraphs": [
+                    "Best Practice II: 'Comprehensive Industry Capstone Mentorship' pairs final-year undergraduate project groups with corporate engineers for a full 9-month incubation lifecycle.",
+                    "Over 84 industrial mentors from Hyderabad IT and manufacturing clusters participated, resulting in 26 conference publications and 4 startup prototypes."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-029",
+        "filename": "institutional_distinctiveness_report_2024_25.pdf",
+        "title": "Institutional Distinctiveness Performance Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 7",
+        "subcriterion": "7.3 Institutional Distinctiveness",
+        "document_type": "Distinctiveness Report",
+        "author": "Dr. Rameshwar Rao, IQAC",
+        "effective_date": "2025-05-20",
+        "status": "active",
+        "summary": "Statement and verifiable impact documentation of institutional distinctiveness: Affordable Clean-Tech Engineering for Semi-Urban Communities.",
+        "keywords": ["institutional distinctiveness", "clean tech", "community innovation", "rural development"],
+        "sections": [
+            {
+                "section_title": "Distinctive Focus on Affordable Clean-Tech Engineering for Semi-Urban Communities",
+                "page_number": 3,
+                "paragraphs": [
+                    "VITEC's institutional distinctiveness centers on 'Affordable Clean-Tech Engineering for Semi-Urban and Rural Communities'. The institution channels multidisciplinary engineering projects to solve regional energy, water, and agricultural challenges.",
+                    "Over the past three academic cycles, this focused thrust has produced 34 specialized prototypes, 12 filed patents, and direct technological adoption across 14 rural village panchayats."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-030",
+        "filename": "financial_audit_report_2024_25.pdf",
+        "title": "Statutory Financial Audit & Fund Utilization Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Administration",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.4 Financial Management & Resource Mobilization",
+        "document_type": "Financial Audit Report",
+        "author": "M/s Sharma & Murthy, Chartered Accountants",
+        "effective_date": "2025-05-28",
+        "status": "active",
+        "summary": "Independent chartered accountant audit report certifying institutional income, recurring/non-recurring expenditures, library/laboratory budgets, and fund utilization.",
+        "keywords": ["financial audit", "chartered accountant", "expenditure", "resource mobilization", "budget"],
+        "sections": [
+            {
+                "section_title": "External Chartered Accountant Audit and Fund Utilization",
+                "page_number": 3,
+                "paragraphs": [
+                    "Independent statutory auditor M/s Sharma & Murthy issued an unqualified audit report confirming total institutional operational and capital expenditure of Rs. 48.2 Crores for financial year 2024-25.",
+                    "Budget allocation metrics show: Rs. 18.4 Crores dedicated to faculty and staff emoluments, Rs. 6.8 Crores to physical and academic infrastructure, and Rs. 2.4 Crores to laboratory equipment maintenance."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-031",
+        "filename": "governance_report_2024_25.pdf",
+        "title": "Institutional Governance and Participative Leadership Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Administration",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.1 Institutional Vision and Leadership",
+        "document_type": "Governance Report",
+        "author": "Sri K. Raghavan, Registrar",
+        "effective_date": "2025-05-14",
+        "status": "active",
+        "summary": "Report on Governing Body meetings, Academic Council resolutions, Finance Committee approvals, and decentralized administrative governance.",
+        "keywords": ["governance", "governing body", "academic council", "decentralization", "leadership"],
+        "sections": [
+            {
+                "section_title": "Governing Body and Academic Council Proceedings",
+                "page_number": 3,
+                "paragraphs": [
+                    "The Governing Body of Vidyapath Institute of Technology convened four statutory meetings during 2024-25, reviewing strategic milestones, annual budgets, and new program proposals.",
+                    "Participative management is practiced through 24 statutory and non-statutory committees with active faculty, student, and industry representation."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-032",
+        "filename": "strategic_plan_report_2025_26.pdf",
+        "title": "Institutional Strategic Perspective Plan (2025-2030) Report",
+        "academic_year": "2025-26",
+        "department": "IQAC",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.2 Strategy Development and Deployment",
+        "document_type": "Strategic Plan",
+        "author": "Dr. Rameshwar Rao, Director IQAC",
+        "effective_date": "2025-06-01",
+        "status": "active",
+        "summary": "Five-year institutional perspective plan outlining roadmaps for NIRF top-100 entry, NBA accreditation renewals, Ph.D. research expansion, and autonomous curriculum evolution.",
+        "keywords": ["strategic plan", "perspective plan", "nirf", "accreditation roadmap", "growth targets"],
+        "sections": [
+            {
+                "section_title": "Five-Year Perspective Plan Deployment (2025-2030)",
+                "page_number": 3,
+                "paragraphs": [
+                    "The Strategic Perspective Plan 2025-2030 outlines actionable targets: attaining NIRF top-100 ranking, securing NBA tier-1 accreditation across all eligible departments, and doubling annual research publications to 300 papers.",
+                    "Capital allocation of Rs. 15.0 Crores is earmarked for the construction of an Advanced Computing and Electric Mobility Center of Excellence."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-033",
+        "filename": "institutional_policy_document_2024_25.pdf",
+        "title": "Institutional Policy on Research Ethics, Anti-Plagiarism & Consultancy",
+        "academic_year": "2024-25",
+        "department": "Administration",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.2 Strategy Development and Deployment",
+        "document_type": "Policy Document",
+        "author": "Dr. Meenakshi Sundaram & Legal Cell",
+        "effective_date": "2024-07-01",
+        "status": "active",
+        "summary": "Official institutional policy document defining ethical research codes, anti-plagiarism screening using Turnitin, consultancy revenue-sharing ratios, and IPR ownership rules.",
+        "keywords": ["policy", "research ethics", "plagiarism", "turnitin", "consultancy rules"],
+        "sections": [
+            {
+                "section_title": "Research Ethics, Anti-Plagiarism & Consultancy Policy",
+                "page_number": 4,
+                "paragraphs": [
+                    "All undergraduate, postgraduate, and faculty research manuscripts and theses must undergo mandatory plagiarism screening via Turnitin. A maximum similarity index threshold of 10% is strictly enforced.",
+                    "Consultancy revenue sharing is structured at 70:30 for projects utilizing intellectual expertise, and 50:50 for assignments utilizing intensive college laboratory equipment."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-034",
+        "filename": "iqac_meeting_minutes_2024_25.pdf",
+        "title": "IQAC Quarterly Meeting Minutes & Action Taken Report (ATR) 2024-25",
+        "academic_year": "2024-25",
+        "department": "IQAC",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.5 Internal Quality Assurance System",
+        "document_type": "Meeting Minutes",
+        "author": "Dr. Rameshwar Rao, Member Secretary IQAC",
+        "effective_date": "2025-05-02",
+        "status": "active",
+        "summary": "Official recorded minutes and corresponding Action Taken Reports across the four quarterly meetings of the IQAC held during the 2024-25 academic year.",
+        "keywords": ["IQAC minutes", "action taken report", "quarterly meetings", "quality resolutions"],
+        "sections": [
+            {
+                "section_title": "Minutes of Quarterly IQAC Meetings and Action Taken Reports",
+                "page_number": 2,
+                "paragraphs": [
+                    "The IQAC reviewed implementation of the 18 approved Faculty Development Programs, confirming that all 126 faculty participant certificates were digitally archived in the institutional ERP.",
+                    "The Action Taken Report approved the procurement of 60 high-end NVIDIA GPU systems for the artificial intelligence research laboratory."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-035",
+        "filename": "sports_activities_report_2024_25.pdf",
+        "title": "Annual Physical Education, Sports & Games Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.3 Student Participation in Sports & Culture",
+        "document_type": "Sports Report",
+        "author": "Physical Director",
+        "effective_date": "2025-05-06",
+        "status": "active",
+        "summary": "Documentation of intra-mural sports tournaments, inter-university medals, athletic facilities, and sports quota student achievements.",
+        "keywords": ["sports", "physical education", "tournaments", "medals", "athletics"],
+        "sections": [
+            {
+                "section_title": "Sports Achievements and Inter-University Tournaments",
+                "page_number": 2,
+                "paragraphs": [
+                    "VITEC student athletes won 14 medals in JNTU Inter-Collegiate and South Zone Inter-University tournaments in basketball, volleyball, badminton, and table tennis.",
+                    "The annual sports fest 'Spardha 2025' witnessed participation from 820 students across 12 athletic disciplines."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-036",
+        "filename": "cultural_activities_report_2024_25.pdf",
+        "title": "Cultural Clubs and Annual Fine Arts Festival Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.3 Student Participation in Sports & Culture",
+        "document_type": "Cultural Report",
+        "author": "Dr. V. Lalitha Devi, Student Affairs",
+        "effective_date": "2025-05-07",
+        "status": "active",
+        "summary": "Annual review of student cultural clubs (music, dance, drama, literary, photography) and the 3-day annual festival 'Tarang 2025'.",
+        "keywords": ["cultural", "fine arts", "student clubs", "tarang", "youth festival"],
+        "sections": [
+            {
+                "section_title": "Cultural Activities and National Youth Festival Participation",
+                "page_number": 2,
+                "paragraphs": [
+                    "The 3-day inter-collegiate cultural fest 'Tarang 2025' attracted 3,200 student participants from 45 engineering and degree colleges across Telangana and Andhra Pradesh.",
+                    "The college dramatics club 'Ranga' secured first prize at the Telangana State Youth Festival for their original street play on cybersecurity awareness."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-037",
+        "filename": "faculty_qualification_report_2024_25.pdf",
+        "title": "Faculty Cadre Ratio, Qualifications & Ph.D. Profile Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Academic Office",
+        "criterion": "Criterion 2",
+        "subcriterion": "2.4 Teacher Profile & Qualification Quality",
+        "document_type": "Faculty Profile Report",
+        "author": "Dr. K. S. Murthy, Dean Academics",
+        "effective_date": "2025-05-12",
+        "status": "active",
+        "summary": "Analysis of teaching faculty cadre ratios, Ph.D. holder percentages, university-recognized research guides, and faculty retention statistics.",
+        "keywords": ["faculty qualification", "ph.d. ratio", "cadre ratio", "research guides", "teacher profile"],
+        "sections": [
+            {
+                "section_title": "Faculty Qualification and Ph.D. Strength",
+                "page_number": 3,
+                "paragraphs": [
+                    "Out of 186 full-time faculty members employed at VITEC during 2024-25, 78 faculty members (41.9%) possess terminal Ph.D. degrees from premier universities including IITs, NITs, and central universities.",
+                    "An additional 64 faculty members are actively pursuing doctoral research under institutional research incentive schemes with 18 faculty acting as university-recognized Ph.D. supervisors."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-038",
+        "filename": "faculty_workload_report_2024_25.pdf",
+        "title": "Faculty Teaching Workload & Student-Teacher Ratio Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Academic Office",
+        "criterion": "Criterion 2",
+        "subcriterion": "2.2 Catering to Diverse Learning Needs",
+        "document_type": "Workload Report",
+        "author": "Dr. K. S. Murthy, Dean Academics",
+        "effective_date": "2025-05-10",
+        "status": "active",
+        "summary": "Analysis of instructional teaching workload, AICTE student-to-teacher ratio (STR) compliance, and laboratory batch distribution.",
+        "keywords": ["student teacher ratio", "workload", "aicte compliance", "teaching hours"],
+        "sections": [
+            {
+                "section_title": "Student-to-Teacher Ratio and Workload Compliance",
+                "page_number": 2,
+                "paragraphs": [
+                    "The institutional Student-Teacher Ratio (STR) stood at 1:14.8 against the AICTE prescribed norm of 1:15 for autonomous engineering institutions.",
+                    "Full-time faculty workload adhered strictly to norms: 14 hours per week for Professors, 16 hours for Associate Professors, and 18 hours for Assistant Professors."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-039",
+        "filename": "anti_ragging_committee_report_2024_25.pdf",
+        "title": "Anti-Ragging Committee Statutory Annual Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.1 Student Support & Scholarships",
+        "document_type": "Committee Report",
+        "author": "Dr. V. Lalitha Devi, Anti-Ragging Cell",
+        "effective_date": "2025-05-04",
+        "status": "active",
+        "summary": "Compliance report on Supreme Court regulations, UGC anti-ragging portal affidavits, flying squad patrols, and zero-tolerance implementation.",
+        "keywords": ["anti-ragging", "student discipline", "ugc compliance", "campus safety"],
+        "sections": [
+            {
+                "section_title": "Anti-Ragging Preventative Measures and Zero Incidents",
+                "page_number": 2,
+                "paragraphs": [
+                    "Vidyapath Institute of Technology maintained a completely ragging-free campus during 2024-25, with zero incidents of ragging reported or lodged.",
+                    "100% of newly admitted undergraduate students and parents submitted electronic anti-ragging affidavits on the central UGC anti-ragging web portal."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-040",
+        "filename": "internal_complaints_committee_report_2024_25.pdf",
+        "title": "Internal Complaints Committee (ICC) Gender Equity Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Administration",
+        "criterion": "Criterion 7",
+        "subcriterion": "7.1 Institutional Values & Environmental Responsibility",
+        "document_type": "ICC Report",
+        "author": "Presiding Officer ICC",
+        "effective_date": "2025-05-05",
+        "status": "active",
+        "summary": "Annual report on PoSH compliance, gender sensitization seminars, grievance redressal turnaround, and campus safety audits.",
+        "keywords": ["ICC", "gender equity", "PoSH", "women safety", "internal complaints"],
+        "sections": [
+            {
+                "section_title": "ICC Gender Sensitization and Grievance Disposal",
+                "page_number": 2,
+                "paragraphs": [
+                    "The Internal Complaints Committee organized six campus-wide gender equity workshops, legal literacy camps, and self-defense training modules for female students.",
+                    "Zero complaints regarding gender harassment were registered during the reporting year, reflecting a secure and respectful co-educational campus environment."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-041",
+        "filename": "annual_institutional_report_2023_24.pdf",
+        "title": "Annual Institutional Quality Report 2023-24",
+        "academic_year": "2023-24",
+        "department": "IQAC",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.5 Internal Quality Assurance System",
+        "document_type": "Annual Report",
+        "author": "Dr. Rameshwar Rao, Director IQAC",
+        "effective_date": "2024-05-20",
+        "status": "active",
+        "summary": "Institutional report for the previous academic cycle (2023-24) documenting faculty training, student admissions, research achievements, and budget utilization.",
+        "keywords": ["annual report 2023-24", "past records", "faculty training", "admissions"],
+        "sections": [
+            {
+                "section_title": "Institutional Summary for Academic Year 2023-24",
+                "page_number": 2,
+                "paragraphs": [
+                    "During 2023-24, Vidyapath Institute of Technology conducted 15 faculty development programs with 104 faculty participation instances.",
+                    "Total research publications in Scopus-indexed journals reached 118 papers, and campus placements recorded an 86.9% placement rate across 68 visiting firms."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-042",
+        "filename": "placement_report_2023_24.pdf",
+        "title": "Campus Placement and Career Progression Report 2023-24",
+        "academic_year": "2023-24",
+        "department": "Training & Placement Cell",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.2 Student Progression",
+        "document_type": "Placement Report",
+        "author": "Prof. S. R. V. Prasad, TPC",
+        "effective_date": "2024-05-22",
+        "status": "active",
+        "summary": "Historical placement record for 2023-24 showing 86.9% placement attainment, 38.0 LPA highest salary package, and recruiter distribution.",
+        "keywords": ["placement 2023-24", "recruitment", "salary packages", "career records"],
+        "sections": [
+            {
+                "section_title": "2023-24 Placement Statistics",
+                "page_number": 2,
+                "paragraphs": [
+                    "In the 2023-24 campus recruitment cycle, 626 out of 720 eligible students (86.9%) secured verified job offers across 68 visiting multinational and national companies.",
+                    "The highest CTC achieved was 38.0 LPA offered by Amazon AWS, and the average salary package stood at 7.6 LPA."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-043",
+        "filename": "research_report_2023_24.pdf",
+        "title": "Research Publications & Innovation Review 2023-24",
+        "academic_year": "2023-24",
+        "department": "Research Cell",
+        "criterion": "Criterion 3",
+        "subcriterion": "3.3 Research Publications and Awards",
+        "document_type": "Research Report",
+        "author": "Dr. Meenakshi Sundaram, Dean R&D",
+        "effective_date": "2024-05-18",
+        "status": "active",
+        "summary": "Historical research documentation of 118 Scopus indexed papers, 12 patent applications, and Rs. 92 Lakhs in external research grants in 2023-24.",
+        "keywords": ["research 2023-24", "scopus", "publications", "patents"],
+        "sections": [
+            {
+                "section_title": "2023-24 Research and Publication Output",
+                "page_number": 2,
+                "paragraphs": [
+                    "Faculty and research scholars published 118 research articles in Scopus-indexed conference proceedings and journals during 2023-24.",
+                    "Sponsored research grants totaled Rs. 92.4 Lakhs received from DST and AICTE research promotion schemes."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-044",
+        "filename": "annual_institutional_report_2022_23.pdf",
+        "title": "Annual Institutional Quality Report 2022-23",
+        "academic_year": "2022-23",
+        "department": "IQAC",
+        "criterion": "Criterion 6",
+        "subcriterion": "6.5 Internal Quality Assurance System",
+        "document_type": "Annual Report",
+        "author": "Dr. Rameshwar Rao, Director IQAC",
+        "effective_date": "2023-05-25",
+        "status": "active",
+        "summary": "Historical institutional archive report for academic year 2022-23 documenting early autonomy transition, infrastructure, and academic results.",
+        "keywords": ["annual report 2022-23", "historical records", "autonomy", "early benchmarks"],
+        "sections": [
+            {
+                "section_title": "Institutional Summary for Academic Year 2022-23",
+                "page_number": 2,
+                "paragraphs": [
+                    "During 2022-23, the institution successfully transitioned to autonomous status under UGC guidelines. 12 faculty development programs were conducted with 88 faculty participation instances.",
+                    "Placements recorded 85.0% student placement across 62 corporate recruiters, with a maximum salary package of 32.0 LPA."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-045",
+        "filename": "placement_report_2022_23.pdf",
+        "title": "Campus Placement and Career Progression Report 2022-23",
+        "academic_year": "2022-23",
+        "department": "Training & Placement Cell",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.2 Student Progression",
+        "document_type": "Placement Report",
+        "author": "Prof. S. R. V. Prasad, TPC",
+        "effective_date": "2023-05-24",
+        "status": "active",
+        "summary": "Historical placement statistics for 2022-23 with 578 placed students (85.0%) and average CTC of 6.8 LPA.",
+        "keywords": ["placement 2022-23", "recruitment", "career records", "historical placement"],
+        "sections": [
+            {
+                "section_title": "2022-23 Campus Placement Records",
+                "page_number": 2,
+                "paragraphs": [
+                    "In 2022-23, 578 out of 680 eligible students were placed across 62 companies, achieving an overall placement rate of 85.0%.",
+                    "Average package was 6.8 LPA with top recruiters including TCS, Wipro, Infosys, and Capgemini."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-046",
+        "filename": "placement_training_report_2024_25.pdf",
+        "title": "Campus Placement Training & Employability Skills Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Training & Placement Cell",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.1 Student Support & Scholarships",
+        "document_type": "Training Report",
+        "author": "Prof. S. R. V. Prasad, TPC",
+        "effective_date": "2025-05-02",
+        "status": "active",
+        "summary": "Detailed report on quantitative aptitude training, coding bootcamps, mock group discussions, and soft skills workshops.",
+        "keywords": ["placement training", "employability skills", "coding bootcamp", "mock interviews"],
+        "sections": [
+            {
+                "section_title": "Pre-Placement Employability Training Modules",
+                "page_number": 2,
+                "paragraphs": [
+                    "A mandatory 120-hour Employability Skill Development training program was conducted for all 3rd and 4th year students, covering DSA in C++/Java, full-stack web architectures, and communication skills.",
+                    "760 students participated in 12 mock technical interview cycles led by corporate software architects."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-047",
+        "filename": "student_grievance_report_2024_25.pdf",
+        "title": "Student Grievance Redressal Committee Annual Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Student Affairs",
+        "criterion": "Criterion 5",
+        "subcriterion": "5.1 Student Support & Scholarships",
+        "document_type": "Grievance Report",
+        "author": "Dr. V. Lalitha Devi, Grievance Cell",
+        "effective_date": "2025-05-03",
+        "status": "active",
+        "summary": "Statutory report on online grievance portal operations, received petitions, resolution timelines, and student welfare initiatives.",
+        "keywords": ["student grievances", "redressal", "online portal", "welfare", "resolutions"],
+        "sections": [
+            {
+                "section_title": "Grievance Redressal Mechanism and Timely Disposal",
+                "page_number": 2,
+                "paragraphs": [
+                    "The institutional Student Grievance Redressal Committee received 14 minor student petitions in 2024-25 through the online portal regarding canteen menu choices and laboratory printer consumables.",
+                    "All 14 petitions were investigated and resolved with an average resolution turnaround time of 4.2 working days."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-048",
+        "filename": "infrastructure_maintenance_report_2024_25.pdf",
+        "title": "Campus Estate Maintenance & Physical Facility Operations 2024-25",
+        "academic_year": "2024-25",
+        "department": "Estate Office",
+        "criterion": "Criterion 4",
+        "subcriterion": "4.4 Campus Infrastructure Maintenance",
+        "document_type": "Maintenance Report",
+        "author": "Er. D. Madhav Rao, Estate Officer",
+        "effective_date": "2025-05-15",
+        "status": "active",
+        "summary": "Standard Operating Procedures (SOPs), maintenance budgets, generator servicing, water purifiers, and laboratory equipment calibration logs.",
+        "keywords": ["maintenance", "campus estate", "calibration", "power backup", "repair logs"],
+        "sections": [
+            {
+                "section_title": "Maintenance Protocols and Preventive Servicing",
+                "page_number": 2,
+                "paragraphs": [
+                    "Annual physical facility maintenance expenditure reached Rs. 1.84 Crores in 2024-25, covering central air conditioning, campus electrical substations, and equipment calibration.",
+                    "Two 250 kVA diesel generator sets ensure 100% emergency electrical backup for all computer clusters, server rooms, and scientific laboratories."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-049",
+        "filename": "program_outcome_mapping_report_2024_25.pdf",
+        "title": "Program Outcome (PO) & PEO Mapping Review 2024-25",
+        "academic_year": "2024-25",
+        "department": "Academic Office",
+        "criterion": "Criterion 2",
+        "subcriterion": "2.6 Student Performance and Learning Outcomes",
+        "document_type": "Curricular Mapping Report",
+        "author": "Dr. K. S. Murthy, Dean Academics",
+        "effective_date": "2025-05-12",
+        "status": "active",
+        "summary": "Detailed mapping matrices linking engineering courses to 12 Washington Accord Graduate Attributes, Program Specific Outcomes (PSOs), and Bloom levels.",
+        "keywords": ["PO mapping", "PEO", "graduate attributes", "outcome-based education", "pso"],
+        "sections": [
+            {
+                "section_title": "Curriculum to Graduate Attribute Correlation",
+                "page_number": 2,
+                "paragraphs": [
+                    "Every syllabus module in the Autonomous R22 curriculum explicitly identifies correlation levels (1-Low, 2-Medium, 3-High) against PO1 through PO12 and department PSOs.",
+                    "Curricular matrices validated that 92.4% of engineering core courses strongly address modern tool usage, environmental sustainability, and engineering ethics."
+                ]
+            }
+        ]
+    },
+    {
+        "document_id": "DOC-ACCR-050",
+        "filename": "e_learning_resources_report_2024_25.pdf",
+        "title": "Digital E-Learning Resources & LMS Utilization Report 2024-25",
+        "academic_year": "2024-25",
+        "department": "Library",
+        "criterion": "Criterion 4",
+        "subcriterion": "4.2 Library as a Learning Resource",
+        "document_type": "E-Learning Report",
+        "author": "Dr. G. Satyanarayana, Chief Librarian",
+        "effective_date": "2025-05-11",
+        "status": "active",
+        "summary": "Annual review of institutional Moodle LMS adoption, NPTEL Local Chapter certifications, NDLI club activities, and Swayam online courses.",
+        "keywords": ["e-learning", "lms", "moodle", "nptel", "swayam", "digital library"],
+        "sections": [
+            {
+                "section_title": "E-Learning Platforms and NPTEL Swayam Certifications",
+                "page_number": 2,
+                "paragraphs": [
+                    "VITEC's institutional Moodle Learning Management System hosted 184 active course pages, recording 142,000 student digital logins and 28,400 e-assignment submissions in 2024-25.",
+                    "Through the institutional NPTEL Swayam Local Chapter, 482 students and 64 faculty members completed certified MOOC courses, earning 18 elite gold certificates."
+                ]
+            }
+        ]
+    }
+]
+
+print(f"Total documents defined: {len(DOCUMENTS)}")

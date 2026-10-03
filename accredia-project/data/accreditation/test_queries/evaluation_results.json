@@ -1,0 +1,254 @@
+{
+  "institution": "Vidyapath Institute of Technology",
+  "total_queries": 22,
+  "metrics": {
+    "top_k_retrieval_relevance_pct": 89.5,
+    "citation_verification_pct": 100.0,
+    "evidence_supported_answer_pct": 77.3,
+    "insufficient_evidence_handling_pct": 100.0
+  },
+  "query_results": [
+    {
+      "id": 1,
+      "query": "What evidence exists for faculty development activities?",
+      "latency_ms": 110.5,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 8,
+      "citations_verified": "5/5",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 2,
+      "query": "How many faculty development programs were conducted in 2024-25?",
+      "latency_ms": 82.9,
+      "status": "insufficient_evidence",
+      "confidence": "Limited Evidence Support",
+      "evidence_count": 10,
+      "citations_verified": "8/8",
+      "is_gap_query": false,
+      "passed": false
+    },
+    {
+      "id": 3,
+      "query": "Show evidence of research publications.",
+      "latency_ms": 40.2,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 8,
+      "citations_verified": "5/5",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 4,
+      "query": "What evidence supports Criterion 3?",
+      "latency_ms": 74.5,
+      "status": "insufficient_evidence",
+      "confidence": "Limited Evidence Support",
+      "evidence_count": 0,
+      "citations_verified": "0/0",
+      "is_gap_query": false,
+      "passed": false
+    },
+    {
+      "id": 5,
+      "query": "What evidence exists for student scholarships?",
+      "latency_ms": 40.7,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 8,
+      "citations_verified": "6/6",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 6,
+      "query": "Show evidence of placement activities.",
+      "latency_ms": 42.1,
+      "status": "insufficient_evidence",
+      "confidence": "Limited Evidence Support",
+      "evidence_count": 8,
+      "citations_verified": "5/5",
+      "is_gap_query": false,
+      "passed": false
+    },
+    {
+      "id": 7,
+      "query": "What evidence exists for industry collaboration?",
+      "latency_ms": 105.2,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 3,
+      "citations_verified": "2/2",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 8,
+      "query": "What evidence exists for extension activities?",
+      "latency_ms": 82.2,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 6,
+      "citations_verified": "4/4",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 9,
+      "query": "Which documents support student mentoring?",
+      "latency_ms": 38.9,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 6,
+      "citations_verified": "4/4",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 10,
+      "query": "Show evidence for green campus initiatives.",
+      "latency_ms": 41.9,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 3,
+      "citations_verified": "2/2",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 11,
+      "query": "What evidence exists for energy conservation?",
+      "latency_ms": 43.7,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 3,
+      "citations_verified": "2/2",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 12,
+      "query": "Which documents mention faculty research?",
+      "latency_ms": 86.3,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 4,
+      "citations_verified": "3/3",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 13,
+      "query": "What evidence exists for student feedback?",
+      "latency_ms": 103.7,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 3,
+      "citations_verified": "2/2",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 14,
+      "query": "Show evidence of academic audits.",
+      "latency_ms": 46.8,
+      "status": "insufficient_evidence",
+      "confidence": "Limited Evidence Support",
+      "evidence_count": 0,
+      "citations_verified": "0/0",
+      "is_gap_query": false,
+      "passed": false
+    },
+    {
+      "id": 15,
+      "query": "What evidence exists for curriculum review?",
+      "latency_ms": 45.8,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 5,
+      "citations_verified": "3/3",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 16,
+      "query": "Show evidence of alumni engagement.",
+      "latency_ms": 45.4,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 3,
+      "citations_verified": "2/2",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 17,
+      "query": "What evidence exists for innovation activities?",
+      "latency_ms": 103.8,
+      "status": "insufficient_evidence",
+      "confidence": "Limited Evidence Support",
+      "evidence_count": 8,
+      "citations_verified": "7/7",
+      "is_gap_query": false,
+      "passed": false
+    },
+    {
+      "id": 18,
+      "query": "Which evidence supports faculty empowerment?",
+      "latency_ms": 101.2,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 8,
+      "citations_verified": "4/4",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 19,
+      "query": "What evidence exists for institutional best practices?",
+      "latency_ms": 89.9,
+      "status": "completed",
+      "confidence": "Moderate Evidence Support",
+      "evidence_count": 5,
+      "citations_verified": "3/3",
+      "is_gap_query": false,
+      "passed": true
+    },
+    {
+      "id": 20,
+      "query": "Which accreditation areas currently have evidence gaps?",
+      "latency_ms": 90.4,
+      "status": "insufficient_evidence",
+      "confidence": "Limited Evidence Support",
+      "evidence_count": 0,
+      "citations_verified": "0/0",
+      "is_gap_query": true,
+      "passed": true
+    },
+    {
+      "id": 21,
+      "query": "What evidence exists for faculty international training programs in 2025-26?",
+      "latency_ms": 34.5,
+      "status": "insufficient_evidence",
+      "confidence": "Limited Evidence Support",
+      "evidence_count": 3,
+      "citations_verified": "2/2",
+      "is_gap_query": true,
+      "passed": true
+    },
+    {
+      "id": 22,
+      "query": "Show evidence of alumni endowment funding for robotics and autonomous vehicles laboratory.",
+      "latency_ms": 39.5,
+      "status": "insufficient_evidence",
+      "confidence": "Limited Evidence Support",
+      "evidence_count": 3,
+      "citations_verified": "2/2",
+      "is_gap_query": true,
+      "passed": true
+    }
+  ]
+}

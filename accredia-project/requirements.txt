@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+pydantic
+python-dotenv
+numpy
+pandas
+scikit-learn
+pytest
+httpx
+pymupdf
+python-docx
+reportlab
+faiss-cpu

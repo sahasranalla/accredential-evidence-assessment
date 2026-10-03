@@ -1,0 +1,72 @@
+[
+  {
+    "name": "IQAC",
+    "head": "Dr. Rameshwar Rao",
+    "code": "IQAC"
+  },
+  {
+    "name": "Research Cell",
+    "head": "Dr. Meenakshi Sundaram",
+    "code": "RCELL"
+  },
+  {
+    "name": "Academic Office",
+    "head": "Dr. K. S. Murthy",
+    "code": "ACAD"
+  },
+  {
+    "name": "Training & Placement Cell",
+    "head": "Prof. S. R. V. Prasad",
+    "code": "TPC"
+  },
+  {
+    "name": "Student Affairs",
+    "head": "Dr. V. Lalitha Devi",
+    "code": "SAFF"
+  },
+  {
+    "name": "Library",
+    "head": "Dr. G. Satyanarayana",
+    "code": "LIB"
+  },
+  {
+    "name": "Examination Cell",
+    "head": "Prof. B. Prabhakar",
+    "code": "EXAM"
+  },
+  {
+    "name": "Administration",
+    "head": "Sri K. Raghavan, Registrar",
+    "code": "ADMIN"
+  },
+  {
+    "name": "CSE Department",
+    "head": "Dr. T. Venkat Reddy",
+    "code": "CSE"
+  },
+  {
+    "name": "ECE Department",
+    "head": "Dr. M. Sridevi",
+    "code": "ECE"
+  },
+  {
+    "name": "Mechanical Department",
+    "head": "Dr. P. V. Ramana",
+    "code": "MECH"
+  },
+  {
+    "name": "Civil Department",
+    "head": "Dr. Ch. Krishna",
+    "code": "CIVIL"
+  },
+  {
+    "name": "EEE Department",
+    "head": "Dr. A. Sudhir",
+    "code": "EEE"
+  },
+  {
+    "name": "Estate Office",
+    "head": "Er. D. Madhav Rao",
+    "code": "EST"
+  }
+]

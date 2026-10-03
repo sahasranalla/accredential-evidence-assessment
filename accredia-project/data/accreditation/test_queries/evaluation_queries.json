@@ -1,0 +1,300 @@
+[
+  {
+    "id": 1,
+    "query": "What evidence exists for faculty development activities?",
+    "expected_criteria": [
+      "Criterion 6"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-003",
+      "DOC-ACCR-001",
+      "DOC-ACCR-002"
+    ],
+    "has_evidence": true,
+    "target_page": 6,
+    "key_phrase": "18 faculty development programs during 2024-25, with 126 faculty participation records"
+  },
+  {
+    "id": 2,
+    "query": "How many faculty development programs were conducted in 2024-25?",
+    "expected_criteria": [
+      "Criterion 6"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-003",
+      "DOC-ACCR-001",
+      "DOC-ACCR-002"
+    ],
+    "has_evidence": true,
+    "target_page": 6,
+    "key_phrase": "18 faculty development programs"
+  },
+  {
+    "id": 3,
+    "query": "Show evidence of research publications.",
+    "expected_criteria": [
+      "Criterion 3"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-005",
+      "DOC-ACCR-001"
+    ],
+    "has_evidence": true,
+    "target_page": 8,
+    "key_phrase": "142 research papers in Scopus and Web of Science"
+  },
+  {
+    "id": 4,
+    "query": "What evidence supports Criterion 3?",
+    "expected_criteria": [
+      "Criterion 3"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-005",
+      "DOC-ACCR-020",
+      "DOC-ACCR-021"
+    ],
+    "has_evidence": true,
+    "target_page": 1,
+    "key_phrase": "Research, Innovation & Incubation"
+  },
+  {
+    "id": 5,
+    "query": "What evidence exists for student scholarships?",
+    "expected_criteria": [
+      "Criterion 5"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-024"
+    ],
+    "has_evidence": true,
+    "target_page": 4,
+    "key_phrase": "1,120 students benefited from government and institutional scholarships"
+  },
+  {
+    "id": 6,
+    "query": "Show evidence of placement activities.",
+    "expected_criteria": [
+      "Criterion 5"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-006",
+      "DOC-ACCR-046"
+    ],
+    "has_evidence": true,
+    "target_page": 2,
+    "key_phrase": "88.4% of eligible students secured confirmed job offers"
+  },
+  {
+    "id": 7,
+    "query": "What evidence exists for industry collaboration?",
+    "expected_criteria": [
+      "Criterion 3"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-021",
+      "DOC-ACCR-007"
+    ],
+    "has_evidence": true,
+    "target_page": 4,
+    "key_phrase": "28 active corporate Memorandums of Understanding"
+  },
+  {
+    "id": 8,
+    "query": "What evidence exists for extension activities?",
+    "expected_criteria": [
+      "Criterion 3"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-011",
+      "DOC-ACCR-012"
+    ],
+    "has_evidence": true,
+    "target_page": 3,
+    "key_phrase": "24 extension and outreach activities"
+  },
+  {
+    "id": 9,
+    "query": "Which documents support student mentoring?",
+    "expected_criteria": [
+      "Criterion 5"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-023"
+    ],
+    "has_evidence": true,
+    "target_page": 2,
+    "key_phrase": "mentor-to-mentee ratio of 1:18"
+  },
+  {
+    "id": 10,
+    "query": "Show evidence for green campus initiatives.",
+    "expected_criteria": [
+      "Criterion 7"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-025"
+    ],
+    "has_evidence": true,
+    "target_page": 3,
+    "key_phrase": "45% verified green cover comprising 2,400 geo-tagged trees"
+  },
+  {
+    "id": 11,
+    "query": "What evidence exists for energy conservation?",
+    "expected_criteria": [
+      "Criterion 7"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-026"
+    ],
+    "has_evidence": true,
+    "target_page": 3,
+    "key_phrase": "250 kW grid-connected rooftop solar photovoltaic power plant"
+  },
+  {
+    "id": 12,
+    "query": "Which documents mention faculty research?",
+    "expected_criteria": [
+      "Criterion 3"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-005",
+      "DOC-ACCR-043"
+    ],
+    "has_evidence": true,
+    "target_page": 1,
+    "key_phrase": "seed money was disbursed to 14 young faculty investigators"
+  },
+  {
+    "id": 13,
+    "query": "What evidence exists for student feedback?",
+    "expected_criteria": [
+      "Criterion 1"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-008",
+      "DOC-ACCR-009"
+    ],
+    "has_evidence": true,
+    "target_page": 3,
+    "key_phrase": "overall positive rating of 91.2%"
+  },
+  {
+    "id": 14,
+    "query": "Show evidence of academic audits.",
+    "expected_criteria": [
+      "Criterion 6"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-019",
+      "DOC-ACCR-002"
+    ],
+    "has_evidence": true,
+    "target_page": 4,
+    "key_phrase": "external peer review committee members from Osmania University"
+  },
+  {
+    "id": 15,
+    "query": "What evidence exists for curriculum review?",
+    "expected_criteria": [
+      "Criterion 1"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-017"
+    ],
+    "has_evidence": true,
+    "target_page": 4,
+    "key_phrase": "Autonomous R22 curriculum framework"
+  },
+  {
+    "id": 16,
+    "query": "Show evidence of alumni engagement.",
+    "expected_criteria": [
+      "Criterion 5"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-010"
+    ],
+    "has_evidence": true,
+    "target_page": 2,
+    "key_phrase": "4 regional chapter reunions in Hyderabad, Bengaluru"
+  },
+  {
+    "id": 17,
+    "query": "What evidence exists for innovation activities?",
+    "expected_criteria": [
+      "Criterion 3"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-005",
+      "DOC-ACCR-020"
+    ],
+    "has_evidence": true,
+    "target_page": 14,
+    "key_phrase": "VITEC Innovation Hub (VIH) incubated 8 new student-led technology startups"
+  },
+  {
+    "id": 18,
+    "query": "Which evidence supports faculty empowerment?",
+    "expected_criteria": [
+      "Criterion 6"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-003",
+      "DOC-ACCR-001"
+    ],
+    "has_evidence": true,
+    "target_page": 6,
+    "key_phrase": "126 faculty participation records"
+  },
+  {
+    "id": 19,
+    "query": "What evidence exists for institutional best practices?",
+    "expected_criteria": [
+      "Criterion 7"
+    ],
+    "expected_docs": [
+      "DOC-ACCR-028"
+    ],
+    "has_evidence": true,
+    "target_page": 2,
+    "key_phrase": "Project-Based Community Innovation"
+  },
+  {
+    "id": 20,
+    "query": "Which accreditation areas currently have evidence gaps?",
+    "expected_criteria": [
+      "Criterion 6",
+      "Criterion 5",
+      "Criterion 7",
+      "Criterion 3"
+    ],
+    "expected_docs": [],
+    "has_evidence": false,
+    "is_gap_query": true,
+    "key_phrase": "Faculty international training programs during 2025-26"
+  },
+  {
+    "id": 21,
+    "query": "What evidence exists for faculty international training programs in 2025-26?",
+    "expected_criteria": [
+      "Criterion 6"
+    ],
+    "expected_docs": [],
+    "has_evidence": false,
+    "is_gap_query": true,
+    "key_phrase": "INSUFFICIENT EVIDENCE"
+  },
+  {
+    "id": 22,
+    "query": "Show evidence of alumni endowment funding for robotics and autonomous vehicles laboratory.",
+    "expected_criteria": [
+      "Criterion 5"
+    ],
+    "expected_docs": [],
+    "has_evidence": false,
+    "is_gap_query": true,
+    "key_phrase": "INSUFFICIENT EVIDENCE"
+  }
+]
